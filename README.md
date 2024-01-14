@@ -139,6 +139,8 @@ _This is simple but very useful DASHBOARD_
 
 - This was the new concept that I was introduced to in this contest, after googling I found about a library called  **multer** , I have used their online documentation to implement this feature. 
 Resource :- [https://www.npmjs.com/package/multer](url)
+- Only Allows PDF format ` <input type="file" id="file" name="file" accept=".pdf" required>  `
+  
 
 ![Screenshot (2758)](https://github.com/HarshBharti2601/Web_Team_Hackthon/assets/155822945/34f3e43d-517e-40dd-bccf-fe91556b71d4)
 
