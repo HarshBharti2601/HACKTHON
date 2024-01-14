@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dashboard.css">
+    <title> Dashboard</title>
+   
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+            <div class="logo">DASHBOARD</div>
+            <form class="logout-form" action="http://localhost:3000/auth/logout" method="post">
+                <input type="submit" class="button" value="Logout">
+            </form>
+            <form class="logout-form" action="http://localhost:3000/auth/validuser" method="get">
+                <input type="submit" class="button" value="Home">
+            </form>
+        </nav>
+    </header>
+
+    <main style="display: flex; flex-wrap: wrap;">
+        <form class="dashboard" action="/submit1" method="post">
+            <input type="submit" class="button" value="All-Markes">
+        </form>
+
+        <form class="dashboard" action="http://localhost:3000/auth/newstudent" method="get">
+            <input type="submit" class="button" value="Add-Student">
+        </form>
+
+        <form class="dashboard" action="http://localhost:3000/auth/addsub" method="get">
+            <input type="submit" class="button" value="Add-Subject">
+        </form>
+
+        <form class="dashboard" action="http://localhost:3000/auth/addmarks" method="get">
+            <input type="submit" class="button" value="Add-Markes">
+        </form>
+
+        <form class="dashboard" action="http://localhost:3000/auth/uplode" method="get">
+            <input type="submit" class="button" value="Uplode-Assignment">
+        </form>
+
+        
+    </main>
+
+</body>
+
+</html>

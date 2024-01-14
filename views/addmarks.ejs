@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/addmarks.css">
+
+    <title>Dashboard</title>
+  
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+            <div class="logo">DASHBOARD</div>
+            <form class="logout-form" action="http://localhost:3000/auth/logout" method="post">
+                <input type="submit" class="button" value="Logout">
+            </form>
+            <form class="logout-form" action="http://localhost:3000/auth/validuser" method="get">
+                <input type="submit" class="button" value="Home">
+            </form>
+        </nav>
+    </header>
+
+    <main style="display: flex; flex-wrap: wrap;">
+        <div class="registration-form">
+            <h2>Add Student Marks</h2>
+
+            <form action="http://localhost:3000/auth/addmarks" method="post">
+                <label for="registrationNumber">Registration Number:</label>
+                <input type="text" id="registrationNumber" name="registrationNumber" required>
+
+                <br>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <br>
+
+                <label for="marks">Marks:</label>
+                <input type="text" id="marks" name="marks" required>
+
+                <br><br>
+
+                <input type="submit" class="button" value="Add Marks">
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>

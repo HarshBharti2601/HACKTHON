@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/uplodeassign.css">
+    <title>Dashboard</title>
+   
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+            <div class="logo">DASHBOARD</div>
+            <form class="logout-form" action="http://localhost:3000/auth/logout" method="post">
+                <input type="submit" class="button" value="Logout">
+            </form>
+            <form class="logout-form" action="http://localhost:3000/auth/validuser" method="get">
+                <input type="submit" class="button" value="Home">
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <div class="file-upload-form">
+            <h2>Uplode Assignment</h2>
+
+            <form action="http://localhost:3000/auth/uplode" method="post" enctype="multipart/form-data">
+                <label for="file">Upload File:</label>
+                <input type="file" id="file" name="file" accept=".pdf" required>      
+                <br><br>
+                <input type="submit" class="button" value="Add File">
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>

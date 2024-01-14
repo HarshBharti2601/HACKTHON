@@ -1,0 +1,36 @@
+{
+  "name": "hackthon",
+  "version": "1.0.0",
+  "description": "student_report_management_system",
+  "main": "main.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarshBharti2601/Web_Team_Hackthon.git"
+  },
+  "author": "Harsh_Bharti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HarshBharti2601/Web_Team_Hackthon/issues"
+  },
+  "homepage": "https://github.com/HarshBharti2601/Web_Team_Hackthon#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "connect-flash": "^0.1.1",
+    "connect-mongodb-session": "^3.1.1",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "http-errors": "^2.0.0",
+    "mongoose": "^8.0.4",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

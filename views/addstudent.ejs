@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/addstudent.css">
+    <title>Dashboard</title>
+  
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+            <div class="logo">DASHBOARD</div>
+            <form class="logout-form" action="http://localhost:3000/auth/logout" method="post">
+                <input type="submit" class="button" value="Logout">
+            </form>
+            <form class="logout-form" action="http://localhost:3000/auth/validuser" method="get">
+                <input type="submit" class="button" value="Home">
+            </form>
+        </nav>
+    </header>
+    
+        <div class="registration-form">
+            <h2>New Student Registration</h2>
+
+            <form action="http://localhost:3000/auth/addstudents" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <br>
+
+                <label for="batch">Batch:</label>
+                <input type="text" id="batch" name="batch" required>
+
+                <br>
+
+                <label for="registrationNumber">Registration Number:</label>
+                <input type="text" id="registrationNumber" name="registrationNumber" required>
+
+                <br>
+
+                <label for="semester">Semester:</label>
+                <input type="text" id="semester" name="semester" required>
+
+                <br><br>
+
+                <input type="submit" class="button" value="Submit">
+            </form>
+        </div>
+    </main>
+
+
+</body>
+
+</html>
